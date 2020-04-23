@@ -36,11 +36,11 @@ class App extends Component {
   render(){
     return (
       <div>
-        <h1>Wheather App</h1>
         <Form getWeather={this.getWeather}/>
         <WeatherInfo {...this.state}/>
       </div>
     );
   }
 }
+
 export default App;
