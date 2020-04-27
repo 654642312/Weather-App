@@ -10,19 +10,19 @@ const  Form = props  => {
             <form onSubmit={props.getWeather}>
                 <div className="group">
                     <input className="input"
-                        required
+                        required 
                         type="text"
                         name="country"
                     />
                     <label>Country</label>
                 </div>
                     <div className="group">
-                        <input className="input" 
-                            required
+                        <input className="input"
+                            required 
                             type="text" 
-                            name="countryCode"
+                            name="city"
                         />
-                        <label>CountryCode</label>
+                        <label>City</label>
                     </div>
                 <div>
                     <button type="submit" className="btn">
