@@ -12,6 +12,8 @@ class App extends Component {
     temperature: ''
   }
 
+//GET INPUTS VALUE
+
   getWeather = e => {
     e.preventDefault();
     const {country, countryCode} = e.target.elements;
@@ -21,6 +23,8 @@ class App extends Component {
     this.Post(countryValue, countryCodeValue);
   }
 
+//REQUEST DATAS 
+  
   Post = async (country, countryCode) => {
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${country},${countryCode}&appid=0bbb934f3ee9fa0da639104766296e9b&units=metric`);
     const data = await res.json();

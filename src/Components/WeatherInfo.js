@@ -1,15 +1,12 @@
 import React from 'react';
+import './styles/WeatherInfo.css';
 
 const WeatherInfo = props => (
-    <div style={center}>
+    <div className="weather-info">
         <p>Weather: {props.weather}</p>
         <p>Humidity: {props.humidity}</p>
         <p>Temperature: {props.temperature}</p>
     </div>
 )
-
-const center = {
-    textAlign: 'center'
-}
 
 export default WeatherInfo
